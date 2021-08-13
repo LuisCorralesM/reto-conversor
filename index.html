@@ -16,33 +16,38 @@
     </head>
     
     <body>
-        <h1 class="text-center my-5">Divisas</h1>
-        <div id ="principal" class="container contenido-principal">
-    
-            <div id="" class="row justify-content-center">
-                <form class="col-10 col-md-8" id="formulario">
-    
-                     <div class="container text-center py-3 col-md-8">
-                            <input id="valorAConvertir" class="form-control text-center " type="number" placeholder="Cantidad de dinero" required>
-                    </div>
-                    <div class="formulario-cotizar row">
-                        <div class="form-group col-12 col-md-4">
-                            <select id="moneda" class="form-control">
-                            </select>
+
+        <div id="main">
+            <h1 class="text-center my-5">Conversor de divisas</h1>
+            <div id ="principal" class="container contenido-principal">
+        
+                <div id="" class="row justify-content-center">
+                    <form class="col-10 col-md-8" id="formulario">
+        
+                         <div class="container text-center py-3 col-md-8">
+                                <input id="valorAConvertir" class="form-control text-center " type="number" placeholder="Cantidad de dinero" required>
                         </div>
-                        <div class="form-group col-12 col-md-4">
-                            <select id="criptomoneda" class="form-control"></select>
+                        <div class="formulario-cotizar row">
+                            <div class="form-group col-12 col-md-4">
+                                <select id="moneda" class="form-control">
+                                </select>
+                            </div>
+                            <div class="form-group col-12 col-md-4">
+                                <select id="criptomoneda" class="form-control"></select>
+                            </div>
+                            <div class="form-group col-12 col-md-2">
+                                <button type="submit" class="btn btn-success">Convertir</button>
+                            </div>
+                            <div class="form-group col-12 col-md-2">
+                                <button type="button" class="btn btn-danger" id="borrar">Borrar</button>
+                            </div>
                         </div>
-                        <div class="form-group col-12 col-md-4">
-                            <button type="submit" class="btn btn-success">Convertir</button>
-                           
-                        </div>
-                    </div>
-                    <!--.formulario-cotizar-->
-                </form>
+                        <!--.formulario-cotizar-->
+                    </form>
+                </div>
             </div>
-        </div>
     
+        </div>
         <script src="index.js" type="module"></script>
         <script src="data/data.js" type="module"></script>
 

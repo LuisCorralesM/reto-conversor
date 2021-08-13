@@ -2,9 +2,14 @@ body {
     background: #136a8a; /* fallback for old browsers */
    
 }
+#main{
+  padding: 100px 0;
+}
+
 h1 {
     font-size: 34px;
     color: white;
+    font-weight: 700;
     font-family: 'Playfair Display', serif;
 }
 form {
@@ -12,7 +17,7 @@ form {
 }
 .contenido-principal {
     margin: 50px auto;
-    background-color: white;
+    background: #90d4ec; /* fallback for old browsers */
     border-radius: 20px;
 }
 

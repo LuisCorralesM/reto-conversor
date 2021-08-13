@@ -10,6 +10,12 @@ const $listaCambio = document.getElementById('criptomoneda');
 const $alerta = document.getElementById('principal');
 // <div id="principal">
 
+document.addEventListener('click', e =>{
+     if(e.target.matches('#borrar')){
+          window.location.reload()
+     }
+})
+
 
 const $fragmento = document.createDocumentFragment();
 const $fragmento2 = document.createDocumentFragment();
@@ -80,6 +86,10 @@ $formulario.addEventListener('submit', (e) => {
           $divMensaje.classList.add('alert-success');
           $divMensaje.appendChild(document.createTextNode(result));
           $alerta.appendChild($divMensaje)
+          let 
+          scroll = document.documentElement.scrollTo,
+          incrementoScroll =+ (scroll + 50)
+          console.log(document.documentElement.scrollTo);
      }
 
 
